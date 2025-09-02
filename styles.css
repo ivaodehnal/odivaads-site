@@ -51,6 +51,14 @@ header .container {
   padding: 1rem 0;
 }
 
+/* Na navigaci v hlavičce přidáme horní odsazení a centrování,
+   aby se oddělila od loga a vypadala vyváženě */
+header nav {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
 /* Zvětšené logo v hlavičce */
 .logo img {
   height: 80px;
