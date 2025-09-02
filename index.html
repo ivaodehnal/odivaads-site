@@ -29,6 +29,7 @@
         </nav>
       </div>
     </header>
+
     <section class="hero">
       <div class="hero-content">
         <h1>Přiveďte správné zákazníky</h1>
@@ -36,6 +37,7 @@
         <a href="#contact" class="cta-button">Nezávazná konzultace</a>
       </div>
     </section>
+
     <section id="services" class="services">
       <div class="container">
         <h2>Moje služby</h2>
@@ -68,6 +70,7 @@
         </div>
       </div>
     </section>
+
     <section id="about" class="about">
       <div class="container">
         <h2>Proč právě OdivaAds?</h2>
@@ -77,40 +80,40 @@
         <p><strong>Individuální přístup:</strong> Každý klient je pro mě unikátní. Přizpůsobuji strategie vašim potřebám a rozpočtu.</p>
       </div>
     </section>
+
     <section id="contact" class="contact">
       <div class="container">
         <h2>Kontaktujte mě</h2>
         <p>Máte zájem o spolupráci? Napište mi.</p>
         <div class="contact-wrapper">
-          <form class="contact-form" onsubmit="submitForm(event)">
+          <!-- Formulář napojený na službu FormSubmit pro odeslání e‑mailu -->
+          <form class="contact-form" action="https://formsubmit.co/odiva.ads@gmail.com" method="POST">
             <label for="name">Jméno</label>
             <input type="text" id="name" name="name" required />
             <label for="email">E‑mail</label>
             <input type="email" id="email" name="email" required />
             <label for="message">Zpráva</label>
             <textarea id="message" name="message" rows="4" required></textarea>
+            <!-- Po odeslání bude návštěvník přesměrován zpět na stránku s potvrzením -->
+            <input type="hidden" name="_next" value="https://ivaodehnal.github.io/odivaads-site/?sent=1" />
+            <!-- Skryté pole pro subjekt e‑mailu -->
+            <input type="hidden" name="_subject" value="Nová poptávka z kontaktního formuláře" />
             <button type="submit" class="cta-button">Odeslat</button>
           </form>
           <div class="contact-info">
             <!-- Aktualizované kontaktní údaje -->
             <p><i class="fas fa-envelope"></i> odiva.ads@gmail.com</p>
-            <p><i class="fas fa-phone"></i> 602&nbsp;549&nbsp;842</p>
+            <p><i class="fas fa-phone"></i> 602 549 842</p>
             <p><i class="fas fa-map-marker-alt"></i> Praha, Česká republika</p>
           </div>
         </div>
       </div>
     </section>
+
     <footer>
       <div class="container">
         <p>&copy; 2025 OdivaAds. Všechna práva vyhrazena.</p>
       </div>
     </footer>
-    <script>
-      function submitForm(e) {
-        e.preventDefault();
-        alert('Děkuji za zprávu! Ozvu se vám co nejdříve.');
-        e.target.reset();
-      }
-    </script>
   </body>
 </html>
