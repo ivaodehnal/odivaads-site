@@ -43,16 +43,19 @@ header {
   z-index: 1000;
 }
 
+/* Přizpůsobení hlavičky – logo vycentrované a zvětšené */
 header .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 
+/* Zvětšené logo v hlavičce */
 .logo img {
-  height: 50px;
+  height: 80px;
   width: auto;
+  margin-bottom: 0.5rem;
 }
 
 nav ul {
@@ -271,5 +274,7 @@ footer {
   }
   nav ul {
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
