@@ -95,7 +95,8 @@
             <label for="message">Zpráva</label>
             <textarea id="message" name="message" rows="4" required></textarea>
             <!-- Po odeslání bude návštěvník přesměrován zpět na stránku s potvrzením -->
-            <input type="hidden" name="_next" value="https://ivaodehnal.github.io/odivaads-site/?sent=1" />
+            <!-- Po odeslání bude návštěvník přesměrován na vlastní stránku s poděkováním -->
+            <input type="hidden" name="_next" value="https://ivaodehnal.github.io/odivaads-site/thankyou.html" />
             <!-- Skryté pole pro subjekt e‑mailu -->
             <input type="hidden" name="_subject" value="Nová poptávka z kontaktního formuláře" />
             <button type="submit" class="cta-button">Odeslat</button>
